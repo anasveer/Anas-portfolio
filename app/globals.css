@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Outfit;
+}
+.ship {
+border: 2px solid rgb(236, 230, 230);
+border-radius: 9px;
+width: 320px;
+
+}
+
+.acep {
+  margin-left: 15px;
+}
+.web {
+  max-width: 1200px;
+  display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 40px;
+   margin-top: 60px;
+   
+      
+   
+}
+.col {
+  border: 2px solid rgb(235, 230, 230);
+  border-radius: 8px;
+  
+  margin-right: 0px;
+   
+  
+}
+.col:hover {
+  background-color: rgb(241, 240, 236);
+  
+}
+
+
+@media  (max-width: 900px) {
+  .web {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  }
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px;
+  width: 70%;
+  
+  margin: auto;
+
+  
+}
+
+@media  (max-width: 1080px) {
+  .work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
+    gap: 50px;
+    width: 50%;
+  }
+}
+
+.overlay {
+  border: 2px solid rgb(187, 182, 182);
+  border-radius: 16px;
+  
+  
+}
+
+
+@media (max-width: 914px) {
+  .work {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+  
